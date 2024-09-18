@@ -31,6 +31,7 @@
       v-model="dialogVisible"
       title="Add A New Hotel Item"
       width="40%"
+      @close="resetForm()"
     >
       <el-form
         ref="hotelForm"
@@ -98,7 +99,7 @@
          </el-form-item>
 
         <el-button type="primary" @click="AddHotel('hotelForm')">Create</el-button>
-        <el-button type="" @click="dialogVisible=false">Cancel</el-button>
+        <el-button type="" @click="cancel()">Cancel</el-button>
       </el-form>
     </el-dialog>
   </div>
@@ -241,13 +242,24 @@ export default {
     disabledDate(date) {
       const today = new Date();
       return date < today.setHours(0, 0, 0, 0);
-    }
+    },
+    resetForm() {
+      this.$refs['hotelForm'].resetFields()
+    },
+    cancel() {
+      this.$refs['hotelForm'].resetFields()
+      this.dialogVisible = false
+    },
   },
 };
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
+<style>
+.el-button:hover {
+    transform: scale(1.05);
+}
+.el-dialog__title{
+    font-size: 20px;
+    font-weight: bold;
 }
 </style>
