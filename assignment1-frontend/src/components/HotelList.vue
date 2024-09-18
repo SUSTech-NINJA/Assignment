@@ -110,11 +110,11 @@ export default {
   name: 'HotelList',
   data() {
     const nameValidator = (rule, value, callback) => {
-      const reg = /^[a-zA-Z]/;
+      const reg = /^[a-zA-Z]+$/;
       if (value === '') {
         callback(new Error('Please input the hotel name'));
       } else if (!reg.test(value)) {
-        callback(new Error('The hotel name must start with a letter'));
+        callback(new Error('The hotel name can only be English letters'));
       } else {
         callback();
       }
