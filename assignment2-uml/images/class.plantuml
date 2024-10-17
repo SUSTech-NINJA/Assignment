@@ -1,0 +1,62 @@
+@startuml
+class Visitor {
+    - name: String
+    - mobileNumber: String
+    + searchReserveRecord(): List<Performance>
+    + reserve(session: Session, seats: List<Seat>): boolean
+    + cancel(reservation: ReservationRecord): boolean
+}
+
+class Administrator {
+    - username: String
+    - password: String
+    + releasePerformance(name: String, description: String): Performance
+    + updatePerformance(performance: Performance): boolean
+    + createSession(session: Session): boolean
+    + updateSession(session: Session): boolean
+    + cancelSession(session: Session): boolean
+    + viewRecord(startDate: Date, endDate: Date): List<ReservationRecord>
+}
+
+class Performance {
+    - name: String
+    - description: String
+}
+
+class Session {
+    - performance: Performance
+    - time: Time
+    - date: Date
+    - remainingTickets: int
+    - seats: List<Seat>
+}
+
+class Seat {
+    - seatNumber: String
+    - price: double
+}
+
+class ReservationRecord {
+    - performance: Performance
+    - time: Time
+    - date: Date
+    - seats: List<Seat>
+    - visitor: Visitor
+    - totalAmount: double
+    - numberOfTickets: int
+    - status: String
+}
+
+class PerformSystem {
+    + login(username: String, password: String): boolean
+}
+
+Visitor -->  ReservationRecord
+Administrator --> ReservationRecord
+Performance --> Session
+Session --> Seat
+Visitor --> Performance
+Visitor --> Session
+PerformSystem --> Visitor
+PerformSystem --> Administrator
+@enduml
