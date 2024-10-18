@@ -51,12 +51,12 @@ class PerformSystem {
     + login(username: String, password: String): boolean
 }
 
-Visitor -->  ReservationRecord
-Administrator --> ReservationRecord
-Performance --> Session
+Visitor ..>  ReservationRecord
+Administrator ..> ReservationRecord
+Session --> Performance
 Session --> Seat
-Visitor --> Performance
-Visitor --> Session
+Visitor ..> Performance
+Visitor ..> Session
 PerformSystem --> Visitor
 PerformSystem --> Administrator
 @enduml
