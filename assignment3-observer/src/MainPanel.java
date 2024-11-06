@@ -54,7 +54,7 @@ public class MainPanel extends JPanel implements Subject<Ball> {
         notifyObservers(GameStatus.PREPARING);
         this.gameStatus = GameStatus.PREPARING;
         if (!paintingBallList.isEmpty()) {
-            paintingBallList.forEach(this::removeObserver);
+            paintingBallList.forEach(this::remove);
         }
         this.paintingBallList = new ArrayList<>();
         Ball.setCount(0);
