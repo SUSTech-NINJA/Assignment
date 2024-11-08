@@ -73,7 +73,7 @@ public class MainPanel extends JPanel implements Subject<Ball> {
     }
 
     public void moveBalls() {
-        paintingBallList.forEach(Ball::move);
+        paintingBallList.stream().filter(ball -> !ball.equals(whiteBall)).forEach(Ball::move);
         if (this.gameStatus == GameStatus.START) {
             score--;
             whiteBall.move();
