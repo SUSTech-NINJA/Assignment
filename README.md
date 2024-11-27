@@ -8,7 +8,7 @@ No PY
 
 ## Content
 
-Totally $1 + 1 + 5 = 7$ assignments, the last one is counted from top five marks out of seven assignments.
+Totally $1 + 1 + 5 = 7$ assignments, the last one is counted from top five marks out of six assignments.
 
 > [!WARNING]
 > ONLY for reference, DO NOT plagiarize.
@@ -20,6 +20,6 @@ Totally $1 + 1 + 5 = 7$ assignments, the last one is counted from top five marks
 | \#3 | [Observer Pattern](./assignment3-observer) | Subject and observer design pattern |
 | \#4 | [Factory Pattern](./assignment4-abstract-factory) | Abstract factory design pattern |
 | \#5 | [Command](./assignment5-command) | Command execution design pattern |
-| \#6 | [Adapter](./assignment6-adapter) |  |
-| \#7 | [Refactoring](./assignment7-refactoring) |  |
-| \#8 | [Dependency Injection](./assignment8-denpendency-injection) |  |
+| \#6 | [Adapter](./assignment6-adapter) | Adapter design pattern |
+| \#7 | [Refactoring](./assignment7-refactoring) | Refactoring strategy |
+| \#8 | [Dependency Injection](./assignment8-denpendency-injection) | (Miss out) |
