@@ -15,7 +15,7 @@ Totally $1 + 1 + 5 = 7$ assignments, the last one is counted from top five marks
 
 | **No** | **Assignment** | **Note** |
 |:---|:---|:---|
-| \#1 | [Frontend (Done)](./assignment1-frontend)<br>[Backend](./assignment1-backend)<br>[Game](./assignment1-game) | Vue3<br>Springboot<br>Unity 3D |
+| \#1 | [Frontend](./assignment1-frontend)<br>[Backend](./assignment1-backend)<br>[Game](./assignment1-game) | Vue3<br>Springboot (Miss out)<br>Unity 3D (Miss out) |
 | \#2 | [UML Diagram](./assignment2-uml) | Use case and class diagram |
 | \#3 | [Observer Pattern](./assignment3-observer) | Subject and observer design pattern |
 | \#4 | [Factory Pattern](./assignment4-abstract-factory) | Abstract factory design pattern |
@@ -23,3 +23,7 @@ Totally $1 + 1 + 5 = 7$ assignments, the last one is counted from top five marks
 | \#6 | [Adapter](./assignment6-adapter) | Adapter design pattern |
 | \#7 | [Refactoring](./assignment7-refactoring) | Refactoring strategy |
 | \#8 | [Dependency Injection](./assignment8-denpendency-injection) | (Miss out) |
+
+## Contributing
+
+Since we have three assignment remains, you can contribute to the repository by adding the missing assignments. Just simply open a pull request.
